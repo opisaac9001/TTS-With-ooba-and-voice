@@ -5,6 +5,8 @@ This code utilizes XTTSv2 by coqui to turn a responce from oobabooga into speech
 
 You will need to have Python 3.10 or 3.11 and anaconda/miniconda. 
 
+Step Zero. Clone repository. 
+
 Step one. Create a conda enviroment with python 3.10. 
 
 Step two. Activate conda enroment and run "pip install -r requirements.txt". and "pip install ffmpeg" (Honestly i dont know how many of those requirements are actually needed and i believe you actually need a couple more. The code should yell at you and tell you what to install) 
