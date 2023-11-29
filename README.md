@@ -1,38 +1,23 @@
-# TTS-With-ooba-and-voice
-This is a basic code that uses oobabooga, whisper, and cuqui tts to allow you to talk to an llm and get a responce with a tts. 
+Ever wished you could have a heart-to-heart with an LLM (Laid-Back Llama)? Look no further! This code, though a tad spaghetti-ish, lets you chat with our llama friends using oobabooga, whisper, and cuqui TTS. Does it qualify as terrible spaghetti code? Absolutely. Does it mysteriously work? Kinda.
 
-This code utilizes XTTSv2 by coqui to turn a responce from oobabooga into speech. It also uses openAIs whisper model to take voice, transpose it and feed that to an LLM. Is this terrible spegetthi code? Yes. Does it work supprisingly well? Kind of. 
+Setup Steps:
 
-You will need to have Python 3.10 or 3.11 and anaconda/miniconda. 
+	1.	🚀 Clone this repo.
+	2.	🐍 Create a conda environment with Python 3.10 (or 3.11, because why not).
+	3.	🧙‍♂️ Activate conda environment and run pip install -r requirements.txt and pip install ffmpeg. Honestly, we’re not entirely sure about all those requirements, but the code will shout at you if something’s missing.
+	4.	🚀 Install Oobabooga from here. Run it with flags --verbose --api. Note: Your setup might need additional flags; let the code guide you.
+	5.	🤖 Download a petite model from Hugging Face. Our TTS model and whisper model hog around 5-6 gigs of VRAM, so pick wisely to avoid OOM errors.
+	6.	📥 Download the TTS model from here. Drop the entire repository into the “Model_and_config_here” folder.
+	7.	🗣️ Grab a 3-6 second (or longer) audio clip and toss it into the “voices” folder.
+	8.	🖋️ Open aispeech.py and point it to the three crucial files (Line 15, 17, and 22 are your editing zones).
+	9.	🚀 With your conda environment active, run python run.py in the terminal.
+	10.	🙏 Cross your fingers for no errors.
+	11.	🤷‍♂️ Optional: Forever curse the developer (that’s me!) and the errors haunting you.
+	12.	1️⃣ or 2️⃣? Choose voice or text interaction in the terminal and enjoy!
 
-Step Zero. Clone repository. 
+This masterpiece (or mess, depending on your perspective) works on Windows and Linux. Maybe on a Mac, but let’s not get our hopes up.
 
-Step one. Create a conda enviroment with python 3.10. 
-
-Step two. Activate conda enroment and run "pip install -r requirements.txt". and "pip install ffmpeg" (Honestly i dont know how many of those requirements are actually needed and i believe you actually need a couple more. The code should yell at you and tell you what to install) 
-
-Step three. Install Oobabooga from https://github.com/oobabooga/text-generation-webui and run it with the flags --verbose --api. Other flags may be needed for your specific set up. 
-
-Step four. Download any small model from hugging face. The TTS model and whisper model take up about 5-6 gigs of VRAM so use a model that wont cause and OOM error when everything is loaded to gether. 
-
-Step Five. Download TTS model from [https://huggingface.co/coqui/XTTS-v2/blob/v2.0.2/model.pth](https://huggingface.co/coqui/XTTS-v2/tree/v2.0.2). place the whole repository in teh folder Model_and_config_here.
-
-Step six. Get a clip between 3-6 seconds long, (or longer it doesnt matter) and place it in voices. 
-
-Step seven. Open the the aispeech.py file and path the three needed files. Line 15, 17, and line 22 need to be edited. 
-
-Step eight. in the terminal with your conda env active run "python run.py" 
-
-Step nine. Pray that you get no errors. 
-
-Optional step ten. curse me forever because of my crappy code and the errors you are recieving. 
-
-Step elevin. Press 1 or 2 depending on if you want to use Voice or text to interface in the terminal and enjoy. 
-
-There are most likely many steps im missing or things im missing. This has taken me way to long to get working and i have forgotten all the things ive done to get it working. If you have a fix just submit it. I still need to do some stuff to it like get it to have discord integration and an API. But because my code knowledge is limited to ChatGPT 3.5 it takes a while. 
-
-Thanks for checking this out. Have fun..... If you can get it to work. 
+Thanks for diving into this llama-filled adventure. Good luck making it work. If you find fixes, just toss them in. Still on the to-do list: Discord integration and an API. Bear with my limited coding knowledge; it’s a work in progress.
 
 
-This works on windows and linux. Maybe on mac but i doubt it. 
-
+PS. Yes I know that normal Oobabooga can do this in the UI a millions times better, buuuuut i wanted to tbw able to use this in other projects like a discord bot or some API or just other things. So I took way to much time making this. Have fun. 
