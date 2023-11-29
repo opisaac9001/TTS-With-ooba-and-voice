@@ -12,14 +12,14 @@ from queue import Queue  # Import Queue
 
 def initialize_tts_model():
     config = XttsConfig()
-    config.load_json("Path-to-config.jason")
+    config.load_json("Path-to-config.json") #path this file to the of the config.json 
     model = Xtts.init_from_config(config)
-    model.load_checkpoint(config, checkpoint_dir="Path-to-xtts-model", use_deepspeed=True)
+    model.load_checkpoint(config, checkpoint_dir="Path-to-xtts-model", use_deepspeed=False) #path this to the folder that has the xtts model you just donwloaded. 
     model.cuda()
     return model
 
 def compute_speaker_latents(model):
-    audio_path = "path-to-example-of-voice-to-clone"
+    audio_path = "path-to-example-of-voice-to-clone" #path this file to your sample voice file. 
     gpt_cond_latent, speaker_embedding = model.get_conditioning_latents(audio_path=[audio_path])
     return gpt_cond_latent, speaker_embedding
 
