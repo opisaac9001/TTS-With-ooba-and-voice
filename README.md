@@ -20,4 +20,4 @@ This masterpiece (or mess, depending on your perspective) works on Windows and L
 Thanks for diving into this llama-filled adventure. Good luck making it work. If you find fixes, just toss them in. Still on the to-do list: Discord integration and an API. Bear with my limited coding knowledge; it’s a work in progress.
 
 
-PS. Yes I know that normal Oobabooga can do this in the UI a millions times better, buuuuut i wanted to tbw able to use this in other projects like a discord bot or some API or just other things. So I took way to much time making this. Have fun. 
+PS. Yes I know that normal Oobabooga can do this in the UI a millions times better, buuuuut i wanted to be able to use this in other projects like a discord bot or some API or just other things. So I took way to much time making this. Have fun. 
